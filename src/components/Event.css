@@ -1,0 +1,106 @@
+/* Base styling for hexagons */
+.hexagon {
+    width: 100px;
+    height: 57.74px;
+    background-color: #d3d3d3;
+    margin: 28.87px 0;
+    position: relative;
+    display: inline-block;
+    margin: 10px;
+  }
+  
+  .hexagon:before, .hexagon:after {
+    content: "";
+    position: absolute;
+    width: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+  }
+  
+  .hexagon:before {
+    bottom: 100%;
+    border-bottom: 28.87px solid #d3d3d3;
+  }
+  
+  .hexagon:after {
+    top: 100%;
+    width: 0;
+    border-top: 28.87px solid #d3d3d3;
+  }
+  
+  /* Floating circles */
+  .circle {
+    position: absolute;
+    background-color: #ffcc00;
+    border-radius: 50%;
+  }
+  
+  .circle1 {
+    width: 40px;
+    height: 40px;
+    top: -50px;
+    left: 5%;
+  }
+  
+  .circle2 {
+    width: 70px;
+    height: 70px;
+    top: 20px;
+    right: 8%;
+  }
+  
+  .circle3 {
+    width: 20px;
+    height: 20px;
+    top: 10%;
+    right: 2%;
+  }
+  
+  .circle4 {
+    width: 30px;
+    height: 30px;
+    bottom: -40px;
+    left: 7%;
+  }
+  
+  /* Responsive behavior */
+  @media (max-width: 768px) {
+    .hexagon {
+      width: 70px;
+      height: 40.42px;
+    }
+    
+    .hexagon:before, .hexagon:after {
+      border-left: 35px solid transparent;
+      border-right: 35px solid transparent;
+    }
+    
+    .hexagon:before {
+      border-bottom: 20.21px solid #d3d3d3;
+    }
+  
+    .hexagon:after {
+      border-top: 20.21px solid #d3d3d3;
+    }
+  
+    .circle1 {
+      width: 30px;
+      height: 30px;
+    }
+  
+    .circle2 {
+      width: 50px;
+      height: 50px;
+    }
+  
+    .circle3 {
+      width: 15px;
+      height: 15px;
+    }
+  
+    .circle4 {
+      width: 20px;
+      height: 20px;
+    }
+  }
+  
